@@ -530,12 +530,21 @@ footer img {
 @media screen and (max-width: 415px) {
     .menu a {
         font-size: 10px;
+        margin-left: 15px;
     }
 
     header {
         max-width: 844px;
         flex-direction: column;
         /* align-items: center; */
+    }
+
+    .presentation p{
+        font-size: 18px;
+    }
+
+    #autotext{
+        font-size: 18px;
     }
 
     .titre p,
@@ -565,11 +574,10 @@ footer img {
     }
 
     .skill{
-        width: 100%;
+        width: 95%;
+        margin-bottom: 15px;
     }
 
-    .Autonome{
-        width: %;
-    }
+    
 
 }
