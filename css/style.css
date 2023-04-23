@@ -6,19 +6,6 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    animation: apparition 0.8s ease-out;
-}
-
-@keyframes apparition {
-    from {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
 }
 
 header {
@@ -40,6 +27,19 @@ section {
     display: flex;
     flex-direction: column;
     margin-top: 70px;
+    animation: apparition 0.8s ease-out;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 
@@ -458,17 +458,17 @@ section {
     border-radius: 15px;
 }
 
-.php,
+/* .php,
 .js,
 .css,
 .html {
     animation: progression 0.8s ease-out;
 }
 
-/* @keyframes progression {
+@keyframes progression {
     from {
         opacity: 0;
-        transform: translateX(30px);
+        transform: translateX(1px);
     }
 
     to {
@@ -476,6 +476,35 @@ section {
         transform: translateX(100px);
     }
 } */
+
+/* /////////////////////////////////////// Contacte ////////////////////////////// */
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.num,
+.linkedIn,
+.email {
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 200px;
+
+}
+
+
+
+
+
+
 
 /* //////////////////////////////////footer////////////////////////// */
 
@@ -517,10 +546,14 @@ footer img {
 }
 
 @media screen and (max-width: 749px) {
-   .parcour1, .parcour2,.parcour3{
-    margin: 20px;
-   }
+
+    .parcour1,
+    .parcour2,
+    .parcour3 {
+        margin: 20px;
+    }
 }
+
 @media screen and (max-width: 681px) {
     .menu {
         padding-top: 15px;
@@ -539,11 +572,11 @@ footer img {
         /* align-items: center; */
     }
 
-    .presentation p{
+    .presentation p {
         font-size: 18px;
     }
 
-    #autotext{
+    #autotext {
         font-size: 18px;
     }
 
@@ -573,11 +606,24 @@ footer img {
         font-size: 12px;
     }
 
-    .skill{
+    .skill {
         width: 95%;
         margin-bottom: 15px;
     }
 
-    
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .num,
+    .linkedIn,
+    .email {
+        width: 80%;
+    }
+
+    .num,
+    .linkedIn {
+        border-bottom: none;
+    }
 }
