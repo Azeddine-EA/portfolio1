@@ -59,3 +59,14 @@ navbarLinks.forEach(link => {
 //         loadCarousel();
     
 // })
+
+
+
+// let typed = new Typed('.auto-input',
+// {
+//   strings : ['passionnée par le développement web/web mobile','une Front-End Developer !', 'une Back-End Developer !', 'une UI Designer !'],
+//   typedSpeed : 100,
+//   backSpeed : 100,
+//   backDelay : 2000,
+//   loop : true,
+// })
